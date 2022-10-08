@@ -1,0 +1,122 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.mainbox
+{
+    display: grid;
+    grid-template-rows: auto auto;
+    text-align: center;
+    justify-content: center;
+    min-width: 70vw;
+    background-color: cadetblue;
+    min-height: 100vh;
+}
+.box
+{
+    display: grid;
+    grid-template-rows: 8vh 30vh 5vh;
+}
+.box h1
+{
+    font-size: 7vh;
+}
+.summ
+{
+    display: grid;
+    grid-template-rows: 8vh 4vh 4vh 8vh 4vh;
+    margin: 25px 0px 0px 0px;
+    border-top: 3px solid black;
+}
+.summ h1
+{
+    font-size: 6vh;
+}
+.sum p
+{
+    font-size: 3vh;
+}
+.textin
+{
+    width: 65vw;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 5px;
+}
+.textbtn
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+}
+.textbtn button
+{
+    margin: 0px 5px;
+    background-color: coral;
+    padding: 5px;
+    font-weight: 700;
+    font-size: 2vh;
+}
+.textpvr
+{
+    max-width: 70vw;
+}
+
+@media (min-width:500px) and (max-width:780px)
+{
+    .textbtn button
+    {
+        margin: 0px 4px;
+        font-size: 2vh;
+        justify-content: center;
+        text-align: center;
+        font-size: 9px;
+        padding: 4px;
+    } 
+    .box
+    {
+        grid-template-rows: 9vh 25vh 3vh;
+    }
+    .textin
+    {
+        width: 80vw;
+    }
+    .summ
+    {
+        grid-template-rows: 9vh 5vh 5vh 9vh 5vh;
+    }
+}
+
+@media (max-width:499px)
+{
+    .textbtn button
+    {
+        margin: 0px 1px;
+        justify-content: center;
+        text-align: center;
+        font-size: 8px;
+        padding: 2px;
+    } 
+    .box
+    {
+        grid-template-rows: 8vh 25vh 4vh;
+    }
+    .textin
+    {
+        width: 90vw;
+    }
+    .summ
+    {
+        grid-template-rows: 8vh 4vh 4vh 8vh 4vh;
+    }
+    .summ h1
+    {
+        font-size: 4vh;
+    }
+    .summ p
+    {
+        font-size: 2vh;
+    }
+}
